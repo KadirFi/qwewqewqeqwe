@@ -1,0 +1,286 @@
+/* 
+    #######################
+    # Pâyidar
+    # 1 - Font
+    # 2 - Body
+    # 3 - Head
+    # 4 - Profile Card
+    # 5 - Footer
+    # 6 - Pop Up
+    # 7 - Responsive
+    #######################
+*/
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap'); /* 'Rajdhani', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); /* 'Montserrat', sans-serif; */
+@import url('css/responsive.css');
+
+::selection{
+    background: orange;
+    color: black;
+}
+::-webkit-scrollbar{
+    background: black;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: orange;
+}
+
+/* Body */
+body{
+    background-color: #212121;
+    margin: 0;
+}
+
+/* Head */
+#head{
+    background-color: #302e2e;
+    padding: 14px;
+    overflow: hidden;
+}
+#head > h1{
+    font-family: 'Montserrat', sans-serif;;
+    float: left;
+    font-weight: lighter;
+    color: orange;
+}
+#head > a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: orange;
+    position: relative;
+    top: 28px;
+    font-size: x-large;
+    text-decoration: none;
+    float: right;
+    cursor: pointer;
+}
+
+/* Profile Card */
+#profile-card{
+    margin-top: 30px;
+}
+#profile-card > #profile-setting{
+    overflow: hidden;
+    padding: 20px;;
+}
+#profile-setting > #payidar-plate{
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+#profile-setting > #payidar-plate > img{
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 0px 0px 5px white;
+    transition: 250ms all;
+}
+#profile-setting > #payidar-plate > img:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 20px 0px rgba(255, 255, 255, 1);
+    /* animation: pâyidar 1.1s ease infinite; */
+}
+#profile-setting > h1{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 70px;
+    color: orange;
+    line-height: 1;
+    /* text-decoration: underline;
+    text-decoration-style: wavy; */
+}
+#profile-setting > #hr{
+    position: relative;
+    top: -40px;
+}
+#profile-setting > #hr > hr{
+    background: orange;
+    border: none;
+    width: 150px;
+}
+#profile-setting > #hr > hr:nth-child(2){
+    position: relative;
+    top: -6px;
+    height: 3px;
+}
+#profile-setting > #hr > hr:nth-child(3){
+    position: relative;
+    top: -5px;
+    height: 3px;
+}
+#profile-setting > p{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    color: orange;
+    font-size: 18px;
+    position: relative;
+    top: -30px;
+}
+/* @keyframes pâyidar{
+    0%, 100%{
+        box-shadow: 10px 5px 0px 0px rgba(255, 255, 255, 1), 10px -5px 0px 0px rgba(255, 255, 255, 1);
+    }
+    50%{
+        box-shadow: -10px 5px 0px 0px rgba(255, 255, 255, 1), -10px -5px 0px 0px rgba(255, 255, 255, 1);
+    }
+} */
+
+/* Footer */
+footer{
+    background-color: #302e2e;
+    padding: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 90px;
+}
+footer > #flex{
+    display: flex;
+    flex: 1;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+footer > #flex > h1{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bolder;
+    text-align: left;
+    color: orange;
+    line-height: .5;
+    outline: none;
+}
+footer > #flex > hr{
+    background: orange;
+    border: none;
+    width: 2px;
+    height: 65px;
+    outline: none;
+}
+footer > #flex > a{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bolder;
+    text-align: left;
+    color: orange;
+    line-height: .5;
+    text-decoration: none;
+    position: relative;
+    margin: 7px;
+    top: 30px;
+    outline: none;
+    transition: 250ms all;
+}
+footer > #flex > a:hover{
+    color: white;
+}
+footer > p{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bolder;
+    text-align: left;
+    color: orange;
+    line-height: 0;
+    opacity: .5;
+    font-size: 13px;
+    position: relative;
+    top: -45px;
+    outline: none;
+}
+
+/* Pop Up */
+#pop-up > h1{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bolder;
+    color: orange;
+    font-size: 80px;
+    line-height: .9;
+}
+#pop-up > p{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bolder;
+    color: orange;
+    font-size: 20px;
+    line-height: .9;
+}
+#pop-up > i{
+    float: right;
+    font-size: 50px;
+    cursor: pointer;
+    color: orange;
+    margin: 5px;
+}
+#pop-up > span{
+    margin-top: 50px;
+    text-align: center;
+    display: block;
+    font-size: 100px;
+    color: orange;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 800px){
+    #head{
+        padding: 8px;
+    }
+
+        /* Diğer */
+    #profile-setting > h1{
+        font-size: 25px;
+    }
+    #profile-setting > p{
+        font-size: initial
+    }
+    #profile-setting > #payidar-plate > img{
+        width: 200px
+    }
+    #profile-setting > #hr > hr{
+        background: orange;
+        border: none;
+        width: 50px;
+    }
+    #profile-setting > #hr > hr:nth-child(2){
+        position: relative;
+        top: 20px;
+        height: 3px;
+    }
+    #profile-setting > #hr > hr:nth-child(3){
+        position: relative;
+        top: 18px;
+        height: 3px;
+    }
+    footer{
+        overflow: initial;
+        height: initial;
+    }
+    footer > #flex{
+        display: initial;
+        flex: initial;
+        flex-wrap: initial;
+        justify-content: initial;
+    }
+    footer > #flex > h1{
+        line-height: 1;
+    }
+    footer > #flex > hr{
+        display: none;
+    }
+    footer > #flex > a{
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: bolder;
+        text-align: left;
+        position: initial !important;
+        outline: none;
+        line-height: 1;
+        margin-left: initial
+    }
+    footer > p{
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: bolder;
+        text-align: center;
+        font-size: 13px;
+        position: initial;
+        line-height: 1;
+    }
+}

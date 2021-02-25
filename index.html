@@ -1,0 +1,88 @@
+<!-- Pâyidar Personal Web Site || Coded By Pâyidar -->
+<html>
+<head>
+    <title>Pâyidar | Ana Sayfa</title>
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="decription" content="Pâyidar kişisel web site. Since 2011" />
+    <meta name="og:site_name" content="Pâyidar" />
+    <meta name="theme-color" content="#fc4e03" />
+    <meta name="author" contnet="Pâyidar" />
+    <meta name="keywords" content="Pâyidar, pâyidar, PÂYİDAR, payidar, Payidar, PAYİDAR, payidar code, PAYİDAR CODE, Payidar Code, Payidar code, Coded By Payidar, personal web site, Personal web site, PERSONAL WEB SİTE" />
+    <!-- Link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reponsive.css" />
+    <link rel="icon" href="image/aqqyt-20201221-0004.jpg" />
+    <link rel="apple-touch-icon" type="image/png" href="image/aqqyt-20201221-0004.jpg""> <!-- Apple pâyidar -->
+    <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="image/aqqyt-20201221-0004.jpg""> <!-- Apple pâyidar -->
+    <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="image/aqqyt-20201221-0004.jpg""> <!-- Apple pâyidar -->
+    <!-- Script -->
+    <script src="https://kit.fontawesome.com/f1c8ddd589.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <style>#pop-up{background:#212121;padding:10px;position:fixed;top:0;left:0;right:0;bottom:0;overflow:hidden;transform:scale(0);transition:250ms all;z-index:999;}</style>
+    <!-- Head Start -->
+    <div id="head">
+        <h1>Pâyidar</h1>
+        <a id="hakkında-pop-up">Hakkında</a>
+            <!-- Hide Pop Up -->
+            <div id="pop-up">
+                <i class="fa fa-close"></i>
+                <h1>Hey?</h1>
+                <p>Sayfa içerisinde zaten hakkımda bilgi verdim. Sağ üstteki çarpıya basarak geri gidebilirsin.</p>
+                    <span class="far fa-flushed"></span>
+            </div>
+    </div>
+    <!-- Head End -->
+
+    <!-- Profile Card Start -->
+    <div id="profile-card">
+        <div id="profile-setting">
+            <div id="payidar-plate"><img id="payidar" src="image/aqqyt-20201221-0004.jpg"></div>
+            <h1>Pâyidar</h1>
+            <div id="hr"><hr/><hr/><hr/></div>
+            <p>Selamlar. ben Pâyidar. Nasılsın bakalım iyimisin bugün?. Neyse lafa dalmadan mevzuya girelim. Öncelikle ismim '<samp>Kadir</samp>'. <samp>Ankara / Altındağ</samp>'da doğdum. 17 Yaşındayım, <samp>Ankara</samp>'da oturuyorum. Kodlama işlerine 2016 - 2017 arasında başladım, ve bu <samp>Yazılımı</samp> kendime göre bir alışkanlık haline getirdim. Yeni <samp>Yazılım Dilleri</samp> öğrenmek benim için çok kolay geliyor artık. Atıyorum <samp><i class="fab fa-js-square"></i> JavaScript</samp> eğitimi alan bir insan döngüleri ve koşulları öğrenir, ve bu öğrendiği döngüleri her kodlama dilinde görür ve hepsi aynı mantık ile hareket eder, o yüzden <samp><i class="fab fa-js-square"></i> JavaScript</samp>'i Full bilen bir insan başka dillere geçerken zorlanmaz.</p>
+            <h1>Beceriler</h1>
+            <div id="hr"><hr/><hr/><hr/></div>
+            <p>Bildiğim <samp>Yazılım</samp> dilleri şunlar. <br/>1- JavaScript <i class="fab fa-js-square"></i> <br/>2- HTML <i class="fab fa-html5"></i> <br/>3- CSS <i class="fab fa-css3-alt"></i> <br/>4- Python <i class="fab fa-python"></i> <br/><br/> Aslında bunları öğrenmek benim için çok kolaydı. Biraz sabır ile bundan daha fazlasını bile öğrenebilirsiniz. Sadece zamana bırakın. Zaman çok çabuk geçiyor bugünden başlarsanız yağrın mutlu olabilirsiniz.</p>
+        </div>
+    </div>
+    <!-- Profile Card End -->
+
+    <!-- Footer Start -->
+    <footer>
+        <div id="flex">
+            <h1>Pâyidar</h1><hr/>
+            <a href="https://instagram.com/06.kadirx">İnstagram</a>
+            <a href="https://discord.gg/DSWE6StZ2F">Discord</a>
+        </div>
+            <p>Tüm Hakları Saklıdır 2020 - 2021 <i class="fa fa-copyright"></i></p>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/jquery.plate.js"></script>
+    <script src="js/mouse.js"></script>
+    <script>
+        $("#payidar-plate").plate()
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#hakkında-pop-up').click(function(){
+                $('#pop-up').css({
+                    "transform":"scale(1.0)"
+                })
+            })
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#pop-up i').click(function(){
+                $('#pop-up').css({
+                    "transform":"scale(0)"
+                })
+            })
+        })
+    </script>
+</body>
+</html>
